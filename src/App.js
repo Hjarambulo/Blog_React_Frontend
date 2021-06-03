@@ -7,6 +7,7 @@ import Slider from './components/Slider'
 import Sidebar from './components/Sidebar';
 import Footer from './components/Footer';
 import SeccionPruebas from './components/SeccionPruebas';
+import Router from './components/Router';
 
 function App() {
   return (
@@ -15,7 +16,7 @@ function App() {
       <Slider/>
       <div class="center">
         <section id="content">
-          <SeccionPruebas/>
+          <Router/>
         </section> 
         <Sidebar/>
       </div> 
