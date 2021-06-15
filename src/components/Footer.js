@@ -5,7 +5,7 @@ const Footer = () => {
         <footer id="footer">
             <div className="center">
                 <p>
-                    &copy; Máster en frameworks para JavaScript de victorroblesweb.es 
+                    &copy; Hecho por Humberto Arambulo 
                 </p>
             </div>
         </footer>
