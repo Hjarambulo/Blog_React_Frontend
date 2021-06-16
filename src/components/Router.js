@@ -1,9 +1,10 @@
 import React, {Component} from 'react';
 import {BrowserRouter, Route, Switch} from 'react-router-dom';
 import Header from './Header';
-import Slider from './Slider';
 import SeccionPruebas from './SeccionPruebas';
-import Sidebar from './Sidebar';
+import Home from './Home';
+import Blog from './Blog';
+import Formulario from './Formulario';
 import Footer from './Footer';
 import Error from './Error';
 
@@ -13,21 +14,21 @@ class Router extends Component{
     render(){
         return(
             <BrowserRouter>
-                <div class="center">
-                    <Header/>
-                    <Slider/>
+                <Header/>
+                <div className="center">
                     {/* Configurar rutas y paginas */}
-                    <section id="content">
                         <Switch>
+                            <Route exact path='/' component={Home}/>
+                            <Route exact path='/home' component={Home}/>
+                            <Route exact path='/blog' component={Blog}/>
+                            <Route exact path='/formulario' component={Formulario}/>
                             <Route exact path='/ruta-prueba' component={SeccionPruebas}/>
                             <Route exact path='/pagina-1' render={() => (
                                 <h1>hola mundo</h1>
                             )}/>
                             <Route component={Error}/>
                         </Switch>
-                    </section>
-                    <Sidebar/>
-                    <div class="clearfix"></div>
+                    <div className="clearfix"></div>
                     <Footer/>
                 </div>
 

@@ -4,9 +4,12 @@ class Slider extends Component{
 
     render(){
         return(
-            <div id="slider" className="slider-big">
-                <h1>Bienvenido a mi Blog</h1>
-                <NavLink to='/ruta-prueba' className="btn-white">Ir al blog</NavLink>
+            <div id="slider" className={this.props.size}>
+                <h1>{this.props.title}</h1>
+                {this.props.btn &&
+                    <NavLink to='/ruta-prueba' className="btn-white">Ir al blog</NavLink>
+                }
+                
             </div>
         );
     }
