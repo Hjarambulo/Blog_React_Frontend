@@ -1,7 +1,7 @@
 import './assets/css/App.css';
 
 // Importar componentes
-import Router from './components/Router';
+import Router from './Router';
 
 function App() {
   return (

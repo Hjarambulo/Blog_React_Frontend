@@ -1,12 +1,12 @@
 import React, {Component} from 'react';
 import {BrowserRouter, Route, Switch} from 'react-router-dom';
-import Header from './Header';
-import SeccionPruebas from './SeccionPruebas';
-import Home from './Home';
-import Blog from './Blog';
-import Formulario from './Formulario';
-import Footer from './Footer';
-import Error from './Error';
+import Header from './components/Header';
+import SeccionPruebas from './components/SeccionPruebas';
+import Home from './components/Home';
+import Blog from './components/Blog';
+import Formulario from './components/Formulario';
+import Footer from './components/Footer';
+import Error from './components/Error';
 
 
 class Router extends Component{
