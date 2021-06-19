@@ -1,14 +1,12 @@
-import './assets/css/App.css';
+import "./assets/css/App.css";
 
 // Importar componentes
-import Router from './Router';
+import Router from "./Router";
 
 function App() {
   return (
     <div className="App">
-      
-        <Router/>
-    
+      <Router />
     </div>
   );
 }
